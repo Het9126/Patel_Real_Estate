@@ -42,21 +42,20 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-card/95 backdrop-blur-md border-b border-border"
           : "bg-transparent"
-      }`}
+        }`}
       data-testid="navbar"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between gap-4 h-16">
           <Link href="/" className="flex items-center gap-2 shrink-0" data-testid="link-home-logo">
-            <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-              <Building2 className="w-5 h-5 text-primary-foreground" />
+            <div className="w-9 h-9 rounded-md flex items-center justify-center">
+              <img src="/favicon.png" className="w-8 h-8 text-primary-foreground" />
             </div>
             <span className={`font-bold text-lg ${scrolled ? "text-foreground" : "text-white"}`}>
-              HomeVista
+              Patel Real Estate
             </span>
           </Link>
 
@@ -79,11 +78,10 @@ export default function Navbar() {
               <Link key={link.href} href={link.href}>
                 <Button
                   variant="ghost"
-                  className={`${
-                    location === link.href
+                  className={`${location === link.href
                       ? scrolled ? "bg-accent text-accent-foreground" : "bg-white/15 text-white"
                       : scrolled ? "text-muted-foreground" : "text-white/80"
-                  } no-default-hover-elevate`}
+                    } no-default-hover-elevate`}
                   data-testid={`link-nav-${link.label.toLowerCase()}`}
                 >
                   {link.label}

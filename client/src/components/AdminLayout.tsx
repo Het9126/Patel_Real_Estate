@@ -53,7 +53,7 @@ export default function AdminLayout({ children }) {
                 <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
                   <Building2 className="w-5 h-5 text-primary-foreground" />
                 </div>
-                <span className="font-bold text-foreground">HomeVista</span>
+                <span className="font-bold text-foreground">Patel Real Estate</span>
               </div>
             </SidebarGroup>
             <SidebarGroup>

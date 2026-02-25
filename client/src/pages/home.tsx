@@ -30,7 +30,7 @@ export default function HomePage() {
   const [, navigate] = useLocation();
   const [searchLocation, setSearchLocation] = useState("");
   const [propertyType, setPropertyType] = useState("all");
-  const [priceRange, setPriceRange] = useState([0, 5000000]);
+  const [priceRange, setPriceRange] = useState([0, 50000000]);
   const [filteredCities, setFilteredCities] = useState([]);
   const [showCities, setShowCities] = useState(false);
   const [featuredIndex, setFeaturedIndex] = useState(0);
@@ -82,7 +82,7 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="max-w-2xl"
           >
-            <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">Trusted by 10,000+ Families</Badge>
+            <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">Trusted by Many Happy Families</Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
               Find Your <span className="text-primary">Dream Home</span> Today
             </h1>
@@ -145,7 +145,7 @@ export default function HomePage() {
 
                 <div>
                   <label className="text-xs font-medium text-muted-foreground mb-1 block">
-                    Price Range: ${(priceRange[0] / 1000).toFixed(0)}K - ${(priceRange[1] / 1000000).toFixed(1)}M
+                    Price Range: Rs:{(priceRange[0] / 1000).toFixed(0)}K - Rs{(priceRange[1] / 1000000).toFixed(1)}cr
                   </label>
                   <Slider
                     min={0}
@@ -174,7 +174,7 @@ export default function HomePage() {
             transition={{ delay: 0.5 }}
             className="flex flex-wrap items-center gap-6 mt-8"
           >
-            {[
+            {/* {[
               { num: "1,500+", label: "Properties" },
               { num: "200+", label: "Happy Clients" },
               { num: "50+", label: "Expert Agents" },
@@ -184,7 +184,7 @@ export default function HomePage() {
                 <p className="text-2xl font-bold text-white">{stat.num}</p>
                 <p className="text-sm text-white/60">{stat.label}</p>
               </div>
-            ))}
+            ))} */}
           </motion.div>
         </div>
       </section>

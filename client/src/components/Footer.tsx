@@ -12,7 +12,7 @@ export default function Footer() {
               <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
                 <Building2 className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="font-bold text-lg text-foreground">HomeVista</span>
+              <span className="font-bold text-lg text-foreground">Patel Real Estate</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
               Your trusted partner in finding the perfect property. We bring you the best real estate options with transparent dealings.
@@ -24,12 +24,12 @@ export default function Footer() {
               <a href="#" className="w-8 h-8 rounded-md bg-muted flex items-center justify-center text-muted-foreground hover-elevate" data-testid="link-twitter">
                 <SiX className="w-4 h-4" />
               </a>
-              <a href="#" className="w-8 h-8 rounded-md bg-muted flex items-center justify-center text-muted-foreground hover-elevate" data-testid="link-instagram">
+              <a href="https://www.instagram.com/_patel_real_estate_?igsh=MWFuYmR6YW9taTYzMw==" className="w-8 h-8 rounded-md bg-muted flex items-center justify-center text-muted-foreground hover-elevate" data-testid="link-instagram">
                 <SiInstagram className="w-4 h-4" />
               </a>
-              <a href="#" className="w-8 h-8 rounded-md bg-muted flex items-center justify-center text-muted-foreground hover-elevate" data-testid="link-linkedin">
+              {/* <a href="#" className="w-8 h-8 rounded-md bg-muted flex items-center justify-center text-muted-foreground hover-elevate" data-testid="link-linkedin">
                 <SiLinkedin className="w-4 h-4" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -77,15 +77,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                <span className="text-sm text-muted-foreground">123 Real Estate Blvd, New York, NY 10001</span>
+                <span className="text-sm text-muted-foreground">address</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-primary shrink-0" />
-                <span className="text-sm text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-sm text-muted-foreground">+91 91041 53190 / +91 93136 85387</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-primary shrink-0" />
-                <span className="text-sm text-muted-foreground">info@homevista.com</span>
+                <span className="text-sm text-muted-foreground">email id</span>
               </li>
             </ul>
           </div>
@@ -93,7 +93,7 @@ export default function Footer() {
 
         <div className="border-t border-border mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-sm text-muted-foreground">
-            2025 HomeVista. All rights reserved.
+            2025 Patel Real Estate. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a>

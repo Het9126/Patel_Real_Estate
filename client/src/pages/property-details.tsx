@@ -125,7 +125,7 @@ export default function PropertyDetailsPage() {
                 <Button
                   size="icon"
                   variant="ghost"
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 text-white"
+                  className="absolute -left-3 -top-20 -translate-y-1/2 translate-x-1/2 bg-black/40 text-white h-10 p-0  z-20"
                   onClick={() => setCurrentImage(i => (i - 1 + images.length) % images.length)}
                   data-testid="button-prev-image"
                 >
@@ -134,7 +134,7 @@ export default function PropertyDetailsPage() {
                 <Button
                   size="icon"
                   variant="ghost"
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 text-white"
+                  className="absolute -right-0 -top-20 -translate-y-1/2 translate-x-1/2 bg-black/40 text-white h-10 p-0  z-20"
                   onClick={() => setCurrentImage(i => (i + 1) % images.length)}
                   data-testid="button-next-image"
                 >

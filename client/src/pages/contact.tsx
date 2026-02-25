@@ -59,7 +59,7 @@ export default function ContactPage() {
                     <div>
                       <label className="text-sm font-medium text-foreground mb-1 block">Full Name *</label>
                       <Input
-                        placeholder="John Doe"
+                        placeholder="Name"
                         value={form.name}
                         onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
                         data-testid="input-contact-name"
@@ -69,7 +69,7 @@ export default function ContactPage() {
                       <label className="text-sm font-medium text-foreground mb-1 block">Email *</label>
                       <Input
                         type="email"
-                        placeholder="john@example.com"
+                        placeholder="Email id"
                         value={form.email}
                         onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
                         data-testid="input-contact-email"
@@ -80,7 +80,7 @@ export default function ContactPage() {
                     <label className="text-sm font-medium text-foreground mb-1 block">Phone (optional)</label>
                     <Input
                       type="tel"
-                      placeholder="+1 (555) 123-4567"
+                      placeholder="Mobile No  "
                       value={form.phone}
                       onChange={e => setForm(f => ({ ...f, phone: e.target.value }))}
                       data-testid="input-contact-phone"
@@ -111,10 +111,10 @@ export default function ContactPage() {
                 <h3 className="font-semibold text-foreground mb-4">Contact Information</h3>
                 <div className="space-y-4">
                   {[
-                    { icon: MapPin, label: "Address", value: "123 Real Estate Blvd\nNew York, NY 10001" },
-                    { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-                    { icon: Mail, label: "Email", value: "info@homevista.com" },
-                    { icon: Clock, label: "Hours", value: "Mon - Fri: 9AM - 6PM\nSat: 10AM - 4PM" },
+                    { icon: MapPin, label: "Address", value: "address" },
+                    { icon: Phone, label: "Phone", value: "+91 91041 53190 / +91 93136 85387" },
+                    { icon: Mail, label: "Email", value: "email id" },
+                    // { icon: Clock, label: "Hours", value: "Mon - Fri: 9AM - 6PM\nSat: 10AM - 4PM" },
                   ].map(item => (
                     <div key={item.label} className="flex items-start gap-3">
                       <div className="w-9 h-9 rounded-md bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">

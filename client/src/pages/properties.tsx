@@ -155,7 +155,7 @@ export default function PropertiesPage() {
             >
               <Card className="p-4 sm:p-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                  <div>
+                  {/* <div>
                     <label className="text-xs font-medium text-muted-foreground mb-1 block">City</label>
                     <Select value={city} onValueChange={(v) => { setCity(v); setPage(1); }}>
                       <SelectTrigger data-testid="select-city">
@@ -167,7 +167,7 @@ export default function PropertiesPage() {
                         ))}
                       </SelectContent>
                     </Select>
-                  </div>
+                  </div> */}
                   <div>
                     <label className="text-xs font-medium text-muted-foreground mb-1 block">Property Type</label>
                     <Select value={propertyType} onValueChange={(v) => { setPropertyType(v); setPage(1); }}>
