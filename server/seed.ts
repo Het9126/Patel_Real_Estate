@@ -14,9 +14,9 @@ export async function seedDatabase() {
 
     console.log("Seeding database...");
 
-    const hashedPassword = await bcrypt.hash("admin123", 10);
+    const hashedPassword = await bcrypt.hash("Keyur9095", 10);
     await storage.createAdmin({
-      username: "admin",
+      username: "Patel_Real_Estate",
       password: hashedPassword,
       name: "Admin User",
       role: "admin",

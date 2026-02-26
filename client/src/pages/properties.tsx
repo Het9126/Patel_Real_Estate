@@ -209,7 +209,7 @@ export default function PropertiesPage() {
                   </div>
                   <div>
                     <label className="text-xs font-medium text-muted-foreground mb-1 block">
-                      Price: ${(priceRange[0] / 1000).toFixed(0)}K - ${(priceRange[1] / 1000000).toFixed(1)}M
+                      Price: ₹{(priceRange[0] / 1000).toFixed(0)}K - ₹{(priceRange[1] / 1000000).toFixed(1)}cr
                     </label>
                     <Slider
                       min={0} max={5000000} step={50000}

@@ -145,7 +145,7 @@ export default function HomePage() {
 
                 <div>
                   <label className="text-xs font-medium text-muted-foreground mb-1 block">
-                    Price Range: Rs:{(priceRange[0] / 1000).toFixed(0)}K - Rs{(priceRange[1] / 1000000).toFixed(1)}cr
+                    Price Range: ₹:{(priceRange[0] / 1000).toFixed(0)}K - ₹{(priceRange[1] / 10000000).toFixed(1)}cr
                   </label>
                   <Slider
                     min={0}

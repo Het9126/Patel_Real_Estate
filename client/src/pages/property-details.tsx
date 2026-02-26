@@ -25,9 +25,9 @@ const amenityIcons = {
 };
 
 function formatPrice(price) {
-  if (price >= 10000000) return `$${(price / 1000000).toFixed(1)}M`;
-  if (price >= 100000) return `$${(price / 1000).toFixed(0)}K`;
-  return `$${price.toLocaleString()}`;
+  if (price >= 10000000) return `₹${(price / 1000000).toFixed(1)}cr`;
+  if (price >= 100000) return `₹${(price / 1000).toFixed(0)}K`;
+  return `₹${price.toLocaleString()}`;
 }
 
 export default function PropertyDetailsPage() {
